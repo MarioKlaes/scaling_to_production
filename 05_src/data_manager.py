@@ -169,3 +169,12 @@ class DataManager():
             self.features_path, 
             write_index = True, 
             overwrite = True)
+
+######################################################################
+# this piece of code allows the .py code run on the command line
+######################################################################
+if __name__ == "__main__":
+    dm = DataManager()
+    dm.download_all()
+    dm.featurize()
+
